@@ -16,10 +16,10 @@ const faqItems = [
     question: "What is Saidi Academy?",
     answer: (
       <p className="text-on-surface-variant leading-relaxed">
-        Saidi Academy is our intelligent education platform designed specifically
-        for healthcare professionals and insurance agents. It leverages
-        data-driven insights to provide a curated learning experience that keeps
-        you ahead of regulatory changes and industry trends.
+        Saidi Academy is our intelligent education platform designed
+        specifically for healthcare professionals and insurance agents. It
+        leverages data-driven insights to provide a curated learning experience
+        that keeps you ahead of regulatory changes and industry trends.
       </p>
     ),
   },
@@ -28,8 +28,8 @@ const faqItems = [
     answer: (
       <div className="space-y-4">
         <p className="text-on-surface-variant leading-relaxed">
-          Saidi Academy offers a comprehensive combination of learning modalities
-          to suit every professional schedule:
+          Saidi Academy offers a comprehensive combination of learning
+          modalities to suit every professional schedule:
         </p>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[

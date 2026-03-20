@@ -282,9 +282,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-6">
                   <div className="shrink-0 w-12 h-12 bg-bloom/10 text-red-900 rounded-full flex items-center justify-center">
-                    <span className="material-symbols-outlined">
-                      lock_open
-                    </span>
+                    <span className="material-symbols-outlined">lock_open</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-primary text-lg">
@@ -329,16 +327,14 @@ export default function Home() {
           <ScrollReveal className="max-w-7xl mx-auto bg-gradient-to-br from-primary to-primary-container rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
             <div className="relative z-10 space-y-8">
-              <span className="signature-label text-lunar">
-                Ready to lead?
-              </span>
+              <span className="signature-label text-lunar">Ready to lead?</span>
               <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tighter">
                 Join the new era of <br />
                 Medicare-ICHRA advisors.
               </h2>
               <p className="text-primary-fixed max-w-2xl mx-auto text-lg md:text-xl">
-                Empower your agency with the tools, training, and
-                certifications required to excel in the ICHRA landscape.
+                Empower your agency with the tools, training, and certifications
+                required to excel in the ICHRA landscape.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
                 <Link

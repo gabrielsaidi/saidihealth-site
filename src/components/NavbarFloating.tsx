@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/courses", label: "CE Courses" },
+  { href: "/courses", label: "Courses" },
   { href: "/faq", label: "Saidi FAQ" },
   { href: "#contact", label: "Contact Us" },
 ];

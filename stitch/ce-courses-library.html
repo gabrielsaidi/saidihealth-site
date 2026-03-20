@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Saidi Health | CE Courses Library</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed": "#dfe0ff",
+                        "surface-dim": "#dcd9de",
+                        "primary-fixed": "#dfe0ff",
+                        "tertiary-fixed-dim": "#63d8da",
+                        "tertiary-container": "#003233",
+                        "surface": "#fcf8fd",
+                        "secondary": "#3b4bd2",
+                        "inverse-surface": "#303034",
+                        "background": "#fcf8fd",
+                        "surface-variant": "#e4e1e6",
+                        "tertiary": "#001b1c",
+                        "inverse-primary": "#bec3fa",
+                        "on-secondary-fixed-variant": "#2132bc",
+                        "on-primary-fixed-variant": "#3e4371",
+                        "on-primary-container": "#8b90c4",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#111643",
+                        "primary": "#0d1240",
+                        "on-tertiary-fixed": "#002020",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#f0edf1",
+                        "surface-container-highest": "#e4e1e6",
+                        "on-surface": "#1b1b1f",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#bec3fa",
+                        "on-tertiary-fixed-variant": "#004f51",
+                        "surface-container-high": "#eae7ec",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c7c5d0",
+                        "outline": "#777680",
+                        "tertiary-fixed": "#81f4f6",
+                        "on-secondary-container": "#fffbff",
+                        "inverse-on-surface": "#f3f0f4",
+                        "secondary-container": "#5666ec",
+                        "primary-container": "#232855",
+                        "surface-container-low": "#f6f2f7",
+                        "surface-bright": "#fcf8fd",
+                        "on-secondary-fixed": "#000964",
+                        "surface-tint": "#565b8b",
+                        "secondary-fixed-dim": "#bdc2ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#46464f",
+                        "on-tertiary-container": "#1aa3a6",
+                        "on-background": "#1b1b1f"
+                    },
+                    fontFamily: {
+                        "headline": ["Figtree", "sans-serif"],
+                        "body": ["Figtree", "sans-serif"],
+                        "label": ["Figtree", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Figtree', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .tonal-shift-bg {
+            background-color: #f6f2f7;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-16 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tight text-[#232855] dark:text-white">Saidi Health</div>
+<div class="hidden md:flex items-center gap-8 font-['Figtree'] antialiased text-sm tracking-tight">
+<a class="text-[#3b4bd2] dark:text-[#918de9] font-semibold border-b-2 border-[#3b4bd2] pb-1" href="#">CE Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#232855] transition-colors" href="#">Clinical Insights</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#232855] transition-colors" href="#">Patient Care</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#232855] dark:text-slate-100 hover:opacity-80 transition-all duration-300 active:scale-95">shopping_cart</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/20">
+<img alt="Profile" data-alt="User profile professional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBueB__nxzidQ4rdtjtZgoLm6O_67U5zpKvKAd0RIRBb2u4UEDRpfLUWdZRT2Y1Oz1-O1pPI4QLHKmXT1Rkbe8XudDBJybnCCMIqPfCDpM7T7t-FcmQ1G_pMKuqffEKSMqZdEYqSqs0AAdQ0tqwQkzz8Z2gJivbyJYtdsSkCbc1EC0uohsBi1m_U0cqBEmGqKBzNcG9sDs5kKBkpKlF_HigEhtX1VWQ6w5XfBxp5QkqH3EWlJjlGEBLbceJKaw-PnvxRs79rtAyrA"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+<!-- Hero Section -->
+<header class="text-center mb-16">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-bold tracking-[0.15em] uppercase mb-4">
+                PROFESSIONAL ACCREDITATION
+            </span>
+<h1 class="text-5xl md:text-6xl font-extrabold text-primary tracking-tight mb-6">
+                Master Your Certification
+            </h1>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
+                Elevate your clinical expertise with our curated selection of Medicare and ICHRA specialist courses, designed for the modern healthcare professional.
+            </p>
+</header>
+<!-- Filter & Search Bar -->
+<div class="sticky top-20 z-40 mb-12 py-4 bg-background/95 backdrop-blur-md">
+<div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+<!-- Tags -->
+<div class="flex flex-wrap gap-2">
+<button class="px-5 py-2 rounded-full bg-primary text-white text-sm font-medium transition-all active:scale-95">all</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">my</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">Not enrolled</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">newest</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">popular</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">free</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium hover:bg-surface-container-high transition-all active:scale-95">certificate</button>
+</div>
+<div class="flex items-center gap-4 w-full lg:w-auto">
+<!-- Search -->
+<div class="relative flex-grow lg:w-72">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full bg-surface-container-highest border-none rounded-full pl-12 pr-6 py-2.5 text-sm focus:ring-2 focus:ring-secondary/40 transition-all" placeholder="Search courses..." type="text"/>
+</div>
+<!-- Categories -->
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-full border border-outline-variant/30 text-sm font-medium text-on-surface hover:bg-white transition-all">
+                        categories
+                        <span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Course Card Component -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Medical documentation and compliance paperwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dXCzGkENYyKwzVmkQ_EzoMmjswMEoz3zGix4BxEAM-eWz1371DIyEGqRjdPKyJ_si662N7fCzhOTvXtyorNutF-s07sph9cK24Yjk5Os0yN-LcduR0w-s0hIagNemLiaD87tX2dQSjW5p0TyqW9Z5_btzVea6ZOtJBpwMtQ2GOOphL_6k51fAZbIPxtaowB721-l0G3f-VIUCBu9pLhokYqBsPuqmAVGho1lfaoMhjwGZ6mm6FEGRE_tyuLbDLfSR0lrT0HT4Fk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Compliance and Documentation: Protecting Everyone in the Chain</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-tertiary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Healthcare professionals in a training session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKzsyRSej8RWM781fUnRTkTqumMIrMqxtSRhl39eYZusdZ4J4v5xwJpzOglp-HIgjcbCY1QsnxS_QBHIvhzUekCllB5ZoiwTsE7Ppik_2bBvr7e9IO0YIAsPOWI2VpGYGS0AOFOp-0VorVIQBCOIqbFnxERMWA3wC8tErLaR8aPr-thx1T3uesPz8SNMEZ4b3NkoOG_BPPLdqFWCyXwtzAl-5gDN-kob8LWDRnEsggpMHEbL0VLjpuT6CsmukBnjmD-oasx385lys"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Educating the Employee</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 3 (Free Badge) -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-secondary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Modern professional workspace with laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuud3a-KDw_LDXQ0JZPwfatyrabs3PdvMZn7moYgmXwrN4eJ-wk8q6ENzM6ACHZA-mwidF6MOCHPI7aO6kT3r9qr_IYIkQAkFBXWij39zuSnluIXv0qeWeXelDMEcD6H5hZM2ngf_r5RobCDxjShA3BIj5kJcg2BGn6MQl5acuptCQOQ9QF4K2H1MYMO7HOZeCfmVOxUjGKpvdwiNSlA56QjWKghdBs4If7OzA8H-QYGchb6JaFH8fT6BmXQOwXmbaMWXlrRFzKfs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<span class="absolute top-6 right-6 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant text-[10px] font-black uppercase tracking-wider">Free</span>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Welcome to Medicare-ICHRA Specialist Certification</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-on-tertiary-container">Free</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Enroll Now</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Hands pointing at charts and graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB50tc3cj2xFzeyC0m-1CYGJKoWsAk9uzEBAWorJdl-2N1BBDwejfBUCHSZR7_Qfi93aQhPoQUc0Yqic8zoxkLOw9YGEd5hfDPML3yPNECyLlU_gMqX4sUVA1OlYTt2T4cWH8L-Zff_jBit0kcewmWKz0mdzsSKofarF5kokS7kN_BZfD52MgLem79esBVSE55iCG6gb4XzJ3PJYC6oxqoFLBYYFiY394jrGMF67RudKby37VnGKei0YHESg3FuMNbBFeXDMJXtqNw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">ICHRA &amp; the Medicare Employee</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-primary overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Person working on a tablet device" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzR__w0vVIA63KkCt20aMRCZaQUoY4m8YbCWtkTFvfaqW9tRV4TMVd8xJZBX5tC20fXeHWi45KtqL6NDcGgidkxF6PnNoGmipU59J4--OhKsoFm2bLr8RZTqQQcyCirugpuxOHosFzTQiLSJ6gggOu4Mb98Pm7QN9L5UFX3QaJhy8IvfZn_uZYX79oI10OyPk5K765z-FOUP5DR3t1c8C-yumiSdrdybADI8nZv0fRRAUCxCsyBnMgdH-pzGOmM-ODqqx0mnZzmI4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Medicare &amp; Group Benefits Overview</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-secondary overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Consultation between professional and client" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9IOAKWSUOn7cSCJKMQ2_WqOFos7wiahjjUghFQEgjkvkHJkMaL7h2MojRuESvWCmnLHHDrGvXmCbjmY7yyga_wjNxvUtuYbqoJKxrLvHUnADaPLe6WbjnbXAVa_jaJ17VAJ4AiF6zlVrFtgUtc4NJBeeE8Q_5NMrgfg1n6WHHueavGs91UfPtoLJk6bFiKEMu7TXei5t1TL06kBoDFQN9Xb2VR8RU6CqQCU4CmKBYlpLVpPxCebi_qtUyEoQz3U9ScrhlUT8vs_Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Medicare &amp; ICHRA Fundamentals: How the Plan Actually Works</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-on-primary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Business statistics on a digital screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKGjLKAJz9k3Luf0qzA6A2C3k4Lib8uvbzpGnOlCzEJkTEH5alLwmDS7zBD8IRYshyEC1yaCkX6BB_5OHIfZc08PM-ndGhnLjXR_08tBHDSYjlf4ph-zChfn3Re4vhFlVGiaihdFek2aceimJB3RESP5IUVFuxSlvN-emqIXr_G8cj_dt8rKsZU08XT6BhSzqTssEy2osRuzrQnSReXHMmI0G00pL2aFHZ0W1WpXTupiX4QFkNBFHJlpq0qjR0tZW5Efmu4gya_Sw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Medicare in the Workplace: Rules That Change When Your Client Has a Job</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-primary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Close up of professional hands writing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZup0p1jKQzgBtFlGRHoZnnpBzkm2O9iNeXCSsUHiGTA29_h73jXlTKVzhtF0K8n7b1IDhBIn7DoWsRewVjvGG55q3UC-WWO0ITFWd95xO9-mgdAXbpGFj7W7kJ1YrbV_O_i3aJlX-e1MtdmnvWxoT-vCoL7Qz13esJ2IaxuAXG6EFWUJzNehxptY1XLmrtNFKEsKmaN-n2Dhdko0ovcpjqC1U_Sf8tfWbSnj2xkOi_CUPHt8n8AB5XP_AzRLvyx_wj6Q-G5F4DS0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">The Agent as an SME</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-tertiary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Diverse group of healthcare specialists collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX6gK0Qdm59C15e7EpzY4YWH7ijktCsHDbUkz4Nb15J4Q1ejDS5DhKv2GQYsGVyGueCmUFvvgHJrcUMABe0qVI7Enhe4EvVYvc-6Ai0z3vbzl9lCJZcxgiRIPWbzhN6pjSSRarUKI52Y40RQcIOCPRgt3-ugRJMsc4PGRWDLK34Dsm72NkAaNQ2jRxNokIhuoahu2kOdCZcvZl4l5sXRHoxj16vr1KiOCnzo6iZsQ_pwHfH-LOXbQICaGPWFzQN-wjDAySJpFBTvg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">The Medicare Stakeholder Ecosystem: Personas, Roles, and Collaboration</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 10 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-secondary-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract imagery of path or transition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaXPOc8tOLZIe_I57qO7OTvSww5ujXM_gfdoFvOuevwmRAwIWVI4Yh0WKdlg53jEFrZdt-EkiOUBiEHZVJjhjQbN1saeGHsxOSLAIm5TlZKzfbQIOPhIOhResC2OBDK-bvJqiDEPgkMIA34Vh8s73HvbcxCQni8EhOqWM0Tfm7zurZr3o9M8pIt6zoQjB-h3HQL5cbuON5TSZsCrjqCK6rfCfkyLzOQD-dsYghcodICYf1VuwMLkCLT6CGMd3P81G0sy_t783ueUY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">Transitioning to Medicare</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+<!-- Card 11 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.04)] hover:shadow-[0_30px_60px_rgba(35,40,85,0.08)] transition-all duration-500">
+<div class="relative aspect-[4/3] bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Conceptual medical knowledge imagery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_bFvl5ZpvJhyS3nsoPZkREkWtm5djDHonZg3woZF8K-Bs9Bm4P50ksKddExtkadsVuqMISx_DQFsPAiZYxfGc8O6OgTx3B0bCYCG0TaUEG61_b3sLe73XJEhNMiIrFE7yEpf1_Ol7QrAZ1LSXY5a4OKxL-uZ83EaLwmQymVHhqyTg2bxOXSA2Gk2sAkf0649w-HaT_2xFCkmR8EpCqSC6gKlwQ7DFr8uCDwH8Bb1M4XhIaLH_Btp0PzNMMFIKyqyKCk4d3UH4NyA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute top-6 left-6 text-white">
+<p class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">saidi ACADEMY</p>
+<p class="text-[11px] font-medium leading-tight mt-1 max-w-[140px]">Medicare-ICHRA Specialist Certification</p>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-primary leading-tight mb-4 flex-grow">What Every Medicare Agent Needs to Know About ICHRA</h3>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-xl font-black text-primary">$80</span>
+<button class="px-6 py-2 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary-container transition-all active:scale-95">Add to cart</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f6f2f7] dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-screen-2xl mx-auto font-['Figtree'] text-xs uppercase tracking-[0.15em] font-bold text-[#232855] dark:text-slate-300">
+<div class="text-lg font-black text-[#232855] dark:text-white">Saidi Health</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-500 hover:text-[#232855] transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-[#232855] transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-[#232855] transition-colors duration-200" href="#">Support</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-[#232855] transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="opacity-100 hover:opacity-70 transition-opacity">
+                © 2024 Saidi Health. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
