@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import NavbarSticky from "@/components/NavbarSticky";
-import FooterSimple from "@/components/FooterSimple";
+import NavbarFloating from "@/components/NavbarFloating";
+import FooterFull from "@/components/FooterFull";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
@@ -92,7 +92,7 @@ const faqItems = [
 export default function FaqPage() {
   return (
     <>
-      <NavbarSticky />
+      <NavbarFloating />
       <main className="pt-32 pb-24">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-8 text-center mb-20">
@@ -208,7 +208,7 @@ export default function FaqPage() {
           </div>
         </section>
       </main>
-      <FooterSimple />
+      <FooterFull />
     </>
   );
 }

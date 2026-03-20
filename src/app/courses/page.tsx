@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import NavbarSticky from "@/components/NavbarSticky";
-import FooterSimple from "@/components/FooterSimple";
+import NavbarFloating from "@/components/NavbarFloating";
+import FooterFull from "@/components/FooterFull";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ function CheckIcon() {
 export default function CoursesPage() {
   return (
     <>
-      <NavbarSticky />
+      <NavbarFloating />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative overflow-hidden px-8 pt-24 pb-16 md:pt-32 md:pb-24">
@@ -228,7 +228,7 @@ export default function CoursesPage() {
           </div>
         </section>
       </main>
-      <FooterSimple />
+      <FooterFull />
     </>
   );
 }

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import NavbarSticky from "@/components/NavbarSticky";
-import FooterSimple from "@/components/FooterSimple";
+import NavbarFloating from "@/components/NavbarFloating";
+import FooterFull from "@/components/FooterFull";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <NavbarSticky />
+      <NavbarFloating />
       <main className="pt-32 pb-24 overflow-hidden">
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-8 mb-32">
@@ -226,7 +226,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <FooterSimple />
+      <FooterFull />
     </>
   );
 }
