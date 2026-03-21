@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import NavbarFloating from "@/components/NavbarFloating";
 import FooterFull from "@/components/FooterFull";
@@ -11,217 +10,289 @@ export const metadata: Metadata = {
     "Saidi Academy empowers insurance professionals with the education, certifications, and tools needed to build future-ready careers.",
 };
 
+const pillars = [
+  {
+    icon: "school",
+    iconBg: "bg-secondary-fixed",
+    iconColor: "text-on-secondary-fixed-variant",
+    title: "Continuing Education (CE) That Builds Skill",
+    description:
+      "Stay compliant while deepening your real-world knowledge with practical CE courses built for today\u2019s Medicare landscape.",
+  },
+  {
+    icon: "library_books",
+    iconBg: "bg-tertiary-fixed",
+    iconColor: "text-on-tertiary-fixed-variant",
+    title: "Practical Tools, Templates & Real Scenarios",
+    description:
+      "Access ready-to-use resources, case examples, and workflows that help you apply what you learn directly with clients and employers.",
+  },
+  {
+    icon: "trending_up",
+    iconBg: "bg-secondary-fixed-dim",
+    iconColor: "text-on-secondary-fixed-variant",
+    title: "Ongoing Learning & Market Updates",
+    description:
+      "Stay ahead of regulatory changes, market trends, and new opportunities with continuous training and expert insights.",
+  },
+  {
+    icon: "groups",
+    iconBg: "bg-secondary-fixed-dim/30",
+    iconColor: "text-on-primary-fixed-variant",
+    title: "Peer Community",
+    description:
+      "Students can interact and learn from instructors and other peers within our community within the academy.",
+  },
+];
+
+const advisors = [
+  { name: "Dianna Lesage", title: "Marketing Lead" },
+  { name: "Kevin Hudson", title: "Chief of Staff" },
+  { name: "Jessica Sweeney", title: "Advisor" },
+  { name: "Alexis Vaughn", title: "Advisor" },
+  { name: "Anthony Kavouras", title: "Advisor" },
+];
+
 export default function AboutPage() {
   return (
     <>
       <NavbarFloating />
-      <main className="pt-32 pb-24 overflow-hidden">
+      <main className="pt-32">
         {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-8 mb-32">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 lg:col-span-7 flex flex-col justify-center">
-              <span className="signature-label text-secondary mb-6">
-                Empowering Careers
+        <section className="max-w-5xl mx-auto px-8 text-center mb-24">
+          <span className="signature-label text-secondary mb-6 block">
+            Empowering Excellence
+          </span>
+          <h1 className="text-6xl md:text-7xl font-black text-primary tracking-tight leading-tight mb-8">
+            About Saidi Academy
+          </h1>
+          <p className="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-3xl mx-auto">
+            Saidi Academy empowers insurance professionals with the education,
+            certifications, and tools needed to build future-ready careers.
+          </p>
+        </section>
+
+        {/* What We Do — Asymmetric Layout */}
+        <section className="bg-surface-container-low py-32 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div className="lg:col-span-7 space-y-8">
+              <span className="signature-label text-on-surface-variant">
+                Our Mission
               </span>
-              <h1 className="text-6xl md:text-8xl font-black text-primary tracking-tighter leading-[0.9] mb-8">
-                About Saidi Academy - Achieve Your Goals
-              </h1>
-              <p className="text-xl md:text-2xl text-on-surface-variant font-medium leading-relaxed max-w-2xl">
-                Saidi Academy empowers insurance professionals with the
-                education, certifications, and tools needed to build
-                future-ready careers.
+              <h2 className="text-4xl md:text-5xl font-bold text-primary tracking-tight leading-snug">
+                Turning industry complexity into practical, actionable
+                knowledge.
+              </h2>
+              <p className="text-lg text-on-surface-variant leading-relaxed">
+                From continuing education and licensing programs to advanced
+                specialty training, we empower our students to master the
+                landscape of modern healthcare insurance.
               </p>
-              <div className="mt-12 flex space-x-6">
-                <Link
-                  href="/courses"
-                  className="px-10 py-4 rounded-full bg-secondary text-white font-bold shadow-xl hover:shadow-secondary/20 transition-all active:scale-95"
-                >
-                  Explore Academy
-                </Link>
-                <Link
-                  href="#what-we-do"
-                  className="flex items-center px-6 py-4 rounded-full text-primary font-bold hover:bg-surface-container-low transition-all"
-                >
-                  Learn More{" "}
-                  <span className="material-symbols-outlined ml-2">
-                    arrow_forward
-                  </span>
-                </Link>
-              </div>
+              <p className="text-lg text-on-surface-variant leading-relaxed border-l-4 border-tertiary-fixed-dim pl-6 py-2">
+                Our platform combines expert instruction, on-demand learning,
+                live-instructor-led training, and real-world resources to help
+                agents stay compliant, grow faster, and lead in emerging
+                markets.
+              </p>
             </div>
-            <div className="col-span-12 lg:col-span-5 relative mt-12 lg:mt-0">
-              <div className="aspect-square rounded-xl bg-surface-container-low relative overflow-hidden">
+            <div className="lg:col-span-5 relative">
+              <div className="relative aspect-4/5 bg-surface-container-highest rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(35,40,85,0.06)]">
                 <Image
-                  alt="Modern clinical workspace with clean aesthetic"
-                  className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80"
-                  src="/images/hero-about.jpg"
+                  alt="Professional education environment"
+                  className="w-full h-full object-cover grayscale-20 hover:grayscale-0 transition-all duration-700"
+                  src="/images/team/what-we-do.jpg"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
-              {/* Decorative Elements */}
-              <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-tertiary-fixed-dim/30 rounded-full blur-3xl"></div>
-              <div className="absolute -top-12 -right-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-8 -left-8 bg-tertiary-fixed-dim/20 backdrop-blur-xl w-32 h-32 rounded-full -z-10"></div>
             </div>
           </div>
         </section>
 
-        {/* What We Do Section */}
-        <section
-          id="what-we-do"
-          className="bg-surface-container-low py-32 rounded-xl mx-4 md:mx-8"
-        >
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-12 gap-8 items-center">
-              <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
-                <span className="signature-label text-on-surface-variant mb-4">
-                  Our Expertise
-                </span>
-                <h2 className="text-4xl md:text-5xl font-black text-primary tracking-tight">
-                  What We Do
-                </h2>
-              </div>
-              <div className="col-span-12 lg:col-span-8">
-                <ScrollReveal className="bg-surface p-12 rounded-xl shadow-[0_20px_40px_rgba(35,40,85,0.04)]">
-                  <p className="text-2xl md:text-3xl font-medium text-primary leading-tight">
-                    From continuing education and licensing programs to advanced
-                    specialty training, we turn industry complexity into{" "}
-                    <span className="text-secondary italic">
-                      practical, actionable knowledge.
-                    </span>
-                  </p>
-                </ScrollReveal>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Mission Section */}
+        {/* Four Pillars Grid */}
         <section className="max-w-7xl mx-auto px-8 py-32">
-          <ScrollReveal className="flex flex-col items-center text-center max-w-4xl mx-auto">
-            <div className="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8">
-              <span className="material-symbols-outlined text-tertiary-fixed-dim text-3xl">
-                clinical_notes
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div className="max-w-2xl">
+              <span className="signature-label text-secondary mb-4 block">
+                SEAMLESS WORKFLOW
               </span>
+              <h2 className="text-4xl font-bold text-primary tracking-tight">
+                The Saidi Advantage
+              </h2>
             </div>
-            <span className="signature-label text-on-surface-variant mb-6">
-              Our North Star
-            </span>
-            <h2 className="text-4xl md:text-6xl font-black text-primary tracking-tight mb-10">
-              Our Mission
-            </h2>
-            <div className="relative">
-              <span className="absolute -top-8 -left-8 text-8xl text-outline-variant/20 font-serif">
-                &ldquo;
-              </span>
-              <p className="text-2xl md:text-4xl font-medium text-on-surface leading-snug">
-                To be the definitive standard for healthcare advisors, mastering
-                the complexities of Individual Coverage Health Reimbursement
-                Arrangements (ICHRA) and Medicare.
-              </p>
-            </div>
-          </ScrollReveal>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {pillars.map((pillar) => (
+              <ScrollReveal
+                key={pillar.title}
+                className="p-8 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col h-full group"
+              >
+                <div
+                  className={`w-12 h-12 rounded-full ${pillar.iconBg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
+                >
+                  <span
+                    className={`material-symbols-outlined ${pillar.iconColor}`}
+                  >
+                    {pillar.icon}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-4 leading-tight">
+                  {pillar.title}
+                </h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed mt-auto">
+                  {pillar.description}
+                </p>
+              </ScrollReveal>
+            ))}
+          </div>
         </section>
 
-        {/* Why Saidi Bento Grid */}
+        {/* Meet The Team */}
+        <section className="bg-surface py-32">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="text-center mb-20">
+              <span className="signature-label text-on-surface-variant mb-4 block">
+                The Leadership
+              </span>
+              <h2 className="text-5xl font-bold text-primary tracking-tight">
+                Meet The Saidi Team
+              </h2>
+            </div>
+            <div className="space-y-32">
+              {/* Marcus Greene */}
+              <ScrollReveal className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div className="lg:col-span-5">
+                  <div className="relative rounded-xl overflow-hidden aspect-4/5 bg-surface-container-highest shadow-[0_20px_40px_rgba(35,40,85,0.06)]">
+                    <Image
+                      alt="Marcus Greene"
+                      className="w-full h-full object-cover grayscale"
+                      src="/images/team/marcus-greene.jpg"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                    />
+                  </div>
+                </div>
+                <div className="lg:col-span-7">
+                  <h3 className="text-4xl font-bold text-primary mb-2">
+                    Marcus Greene
+                  </h3>
+                  <p className="text-secondary font-bold text-lg mb-8">
+                    Founder and CEO
+                  </p>
+                  <p className="text-lg text-on-surface-variant leading-relaxed">
+                    Marcus has spent over 15 years in the insurance industry
+                    driving growth and developing high-performing agents. After
+                    leadership roles at Ameriprise he founded Healthpro
+                    Consultants, a Medicare-focused FMO. Recognizing the
+                    industry&apos;s rapid evolution, Marcus launched Saidi
+                    Health &mdash; a new standard for intelligent, tech-enabled
+                    agent education built for the modern insurance professional.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              {/* Jason T. Andrew */}
+              <ScrollReveal className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div className="lg:col-span-7 order-2 lg:order-1">
+                  <h3 className="text-4xl font-bold text-primary mb-2">
+                    Jason T. Andrew
+                  </h3>
+                  <p className="text-secondary font-bold text-lg mb-8">
+                    Founder / COO
+                  </p>
+                  <p className="text-lg text-on-surface-variant leading-relaxed">
+                    Jason is a seasoned entrepreneur, angel investor, and
+                    executive with over 20 years of experience in Silicon
+                    Valley. He has worked in real estate, insurance, technology,
+                    and nonprofits, and is passionate about building companies
+                    that are values-driven and where people can collaborate in
+                    an environment where trust and authenticity bring about
+                    amazing results.
+                  </p>
+                </div>
+                <div className="lg:col-span-5 order-1 lg:order-2">
+                  <div className="relative rounded-xl overflow-hidden aspect-4/5 bg-surface-container-highest shadow-[0_20px_40px_rgba(35,40,85,0.06)]">
+                    <Image
+                      alt="Jason T. Andrew"
+                      className="w-full h-full object-cover grayscale"
+                      src="/images/team/jason-andrew.jpg"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                    />
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Instructors */}
         <section className="max-w-7xl mx-auto px-8 py-32">
           <div className="mb-16">
-            <span className="signature-label text-secondary mb-4">
-              The Saidi Advantage
+            <span className="signature-label text-secondary mb-4 block">
+              Expert Led
             </span>
-            <h2 className="text-5xl font-black text-primary tracking-tight">
-              Why Saidi?
+            <h2 className="text-4xl font-bold text-primary tracking-tight">
+              Our Instructors
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Clinical Excellence */}
-            <ScrollReveal className="group p-10 bg-surface-container-lowest rounded-xl shadow-[0_4px_24px_rgba(35,40,85,0.03)] hover:shadow-[0_20px_40px_rgba(35,40,85,0.08)] transition-all duration-500">
-              <div className="w-14 h-14 bg-surface rounded-full flex items-center justify-center mb-8 group-hover:bg-tertiary-fixed-dim/20 transition-colors">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  medical_services
-                </span>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {/* Lead Instructor */}
+            <div className="md:col-span-2 lg:col-span-1 p-6 bg-primary-container text-white rounded-lg flex flex-col justify-end min-h-[300px] relative overflow-hidden group">
+              <div className="absolute inset-0 opacity-40 group-hover:opacity-20 transition-opacity">
+                <Image
+                  alt="Marcus Greene teaching"
+                  className="w-full h-full object-cover grayscale"
+                  src="/images/team/marcus-instructor.jpg"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 20vw"
+                />
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Clinical Excellence
-              </h3>
-              <p className="text-on-surface-variant leading-relaxed">
-                Precision-engineered curriculum that bridges the gap between
-                clinical theory and insurance practicality.
-              </p>
-            </ScrollReveal>
-
-            {/* Regulatory Confidence */}
-            <ScrollReveal className="group p-10 bg-surface-container-lowest rounded-xl shadow-[0_4px_24px_rgba(35,40,85,0.03)] hover:shadow-[0_20px_40px_rgba(35,40,85,0.08)] transition-all duration-500">
-              <div className="w-14 h-14 bg-surface rounded-full flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  gavel
-                </span>
+              <div className="relative z-10">
+                <p className="font-bold text-xl">Marcus Greene</p>
+                <p className="text-on-primary-container text-xs font-medium uppercase tracking-widest mt-1">
+                  Provider Director & Head Instructor
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Regulatory Confidence
-              </h3>
-              <p className="text-on-surface-variant leading-relaxed">
-                Stay ahead of compliance shifts with real-time updates and
-                authoritative guidance on Medicare and ICHRA.
-              </p>
-            </ScrollReveal>
-
-            {/* Career Growth */}
-            <ScrollReveal className="group p-10 bg-surface-container-lowest rounded-xl shadow-[0_4px_24px_rgba(35,40,85,0.03)] hover:shadow-[0_20px_40px_rgba(35,40,85,0.08)] transition-all duration-500">
-              <div className="w-14 h-14 bg-surface rounded-full flex items-center justify-center mb-8 group-hover:bg-on-tertiary-container/10 transition-colors">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  trending_up
-                </span>
+            </div>
+            {/* Placeholder Instructor Slots */}
+            {[1, 2, 3, 4].map((i) => (
+              <div
+                key={i}
+                className="p-6 bg-surface-container-low rounded-lg flex flex-col justify-end min-h-[300px] border border-outline-variant/10"
+              >
+                <p className="font-bold text-lg text-primary">Name</p>
+                <p className="text-on-surface-variant text-xs font-medium uppercase tracking-widest mt-1">
+                  Title
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Career Growth
-              </h3>
-              <p className="text-on-surface-variant leading-relaxed">
-                Accelerate your professional trajectory with high-value
-                certifications recognized across the healthcare industry.
-              </p>
-            </ScrollReveal>
+            ))}
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="max-w-7xl mx-auto px-8 mb-32">
-          <div className="bg-primary-container p-12 md:p-20 rounded-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-secondary/20 to-transparent"></div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 relative z-10">
-              <div>
-                <div className="text-4xl md:text-5xl font-black text-tertiary-fixed-dim mb-2">
-                  15k+
+        {/* Advisors & Partners */}
+        <section className="bg-surface-container-low py-32">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="mb-16 text-center">
+              <span className="signature-label text-on-surface-variant mb-4 block">
+                Collaborators
+              </span>
+              <h2 className="text-4xl font-bold text-primary tracking-tight">
+                Advisors & Partners
+              </h2>
+            </div>
+            <div className="flex flex-wrap justify-center gap-x-16 gap-y-12">
+              {advisors.map((advisor) => (
+                <div key={advisor.name} className="text-center group">
+                  <p className="font-bold text-primary text-lg group-hover:text-secondary transition-colors">
+                    {advisor.name}
+                  </p>
+                  <p className="text-on-surface-variant text-xs font-medium tracking-widest mt-1 uppercase">
+                    {advisor.title}
+                  </p>
                 </div>
-                <div className="signature-label text-on-primary-container">
-                  Certified Professionals
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-black text-tertiary-fixed-dim mb-2">
-                  98%
-                </div>
-                <div className="signature-label text-on-primary-container">
-                  Success Rate
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-black text-tertiary-fixed-dim mb-2">
-                  50+
-                </div>
-                <div className="signature-label text-on-primary-container">
-                  States Covered
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-black text-tertiary-fixed-dim mb-2">
-                  24/7
-                </div>
-                <div className="signature-label text-on-primary-container">
-                  Expert Support
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
