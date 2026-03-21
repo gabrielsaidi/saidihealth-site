@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/courses", label: "Courses" },
-  { href: "/faq", label: "Saidi FAQ" },
+  { href: "/faq", label: "FAQ" },
   { href: "#contact", label: "Contact Us" },
 ];
 
