@@ -161,7 +161,7 @@ export default function CourseGrid() {
   return (
     <>
       {/* Sticky Filter & Search Bar */}
-      <div className="sticky top-20 z-40 mb-12 py-4 bg-background/95 backdrop-blur-md">
+      <div className="mb-12 py-4">
         <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
           {/* Filter Tags */}
           <div className="flex flex-wrap gap-2">
